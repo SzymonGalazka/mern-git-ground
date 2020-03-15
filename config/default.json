@@ -1,0 +1,4 @@
+{
+    "mongoURI": "mongodb+srv://simon:simon@gitground-xeuzh.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secrettokenofmine"
+}
