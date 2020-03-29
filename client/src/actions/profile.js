@@ -42,7 +42,7 @@ export const getProfiles = () => async dispatch => {
 };
 
 // Get profile by ID
-export const getProfilebyId = userId => async dispatch => {
+export const getProfileById = userId => async dispatch => {
   try {
     const res = await axios.get(`/api/profile/user/${userId}`);
 
@@ -207,7 +207,6 @@ export const deleteEducation = id => async dispatch => {
 export const deleteAccount = () => async dispatch => {
   if (window.confirm("Are you sure? This can NOT be undone!")) {
     try {
-      const res = await axios.delete("/api/profile");
 
       dispatch({ type: CLEAR_PROFILE });
       dispatch({ type: ACCOUNT_DELETED });
