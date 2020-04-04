@@ -9,6 +9,8 @@ import Alert from "./components/layout/Alert";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import Dashboard from "./components/dashboard/Dashboard";
+import Posts from "./components/posts/Posts";
+import Post from "./components/post/Post";
 import CreateProfile from "./components/profile-forms/CreateProfile";
 import EditProfile from "./components/profile-forms/EditProfile";
 import AddExperience from "./components/profile-forms/AddExperience";
@@ -24,8 +26,8 @@ import { loadUser } from "./actions/auth";
 import setAuthToken from "./utils/setAuthToken";
 
 const iconList = Object.keys(Icons)
-  .filter(key => key !== "fas" && key !== "prefix")
-  .map(icon => Icons[icon]);
+  .filter((key) => key !== "fas" && key !== "prefix")
+  .map((icon) => Icons[icon]);
 
 library.add(...iconList);
 
@@ -72,6 +74,8 @@ const App = () => {
                 path='/add-education'
                 component={AddEducation}
               />
+              <PrivateRoute exact path='/posts' component={Posts} />
+              <PrivateRoute exact path='/posts/:id' component={Post} />
             </Switch>
           </section>
         </Fragment>

@@ -15,6 +15,11 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
         </Link>
       </li>
       <li>
+        <Link to='/posts'>
+          <span className='hide-sm'>Posts</span>
+        </Link>
+      </li>
+      <li>
         <Link to='/dashboard'>
           <FontAwesomeIcon icon='chart-line' />
           {"  "}
