@@ -1,0 +1,6 @@
+{
+    "mongoURI": "mongodb+srv://simon:simon@gitground-xeuzh.mongodb.net/test?retryWrites=true&w=majority",
+    "jwtSecret": "secrettokenofmine",
+    "githubClientId": "1ae834214199728f67da",
+    "githubSecret": "78c96d3508b255cef0c41df8349f4cde26436651"
+}
